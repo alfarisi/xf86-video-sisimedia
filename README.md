@@ -23,9 +23,19 @@ The packages needed to build this driver in Debian :
 $ ./configure --prefix=/usr --disable-dri
 $ make
 $ sudo make install
+```
+
+Configure your X
+```sh
+# X -configure
+# cp ~/xorg.conf.new /etc/X11/xorg.conf
+```
+
+Or, copy my configuration
+```sh
 $ sudo cp xorg.conf /etc/X11/xorg.conf
 ```
 
-Then restart your X. Good luck!
+Then [re]start your X. Good luck!
 
 Tested on Debian 9.5 with xorg 1.19
